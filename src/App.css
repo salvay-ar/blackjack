@@ -1,0 +1,90 @@
+body {
+  justify-content: center;
+  width: 100%;
+  background-color:#004b23;
+  
+}
+
+
+.contenedor-juego {
+  text-align: center;
+  padding: 20px;
+  background-color: #004b23;
+  color: white;
+  min-height: 100vh;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.zona-botones {
+  margin-bottom: 20px;
+}
+
+.zona-botones button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #007f5f;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.zona-botones button:hover {
+  background-color: #2b9348;
+}
+
+.subtitulo {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.zona-cartas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.carta {
+  position: relative;
+}
+
+.imagen-carta {
+  width: 100px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #000;
+}
+
+.opciones-as {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.opciones-as button {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #80b918;
+  color: white;
+  cursor: pointer;
+}
+
+.total {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.ganador {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #ffe156;
+}
