@@ -45,8 +45,9 @@ function App() {
   };
 
   const agarrarCarta = (deckId, cantidad = 1, destino = "jugador") => {
+
     if (!deckId) return;
-    fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=${cantidad}`)
+    return fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=${cantidad}`)
       .then((res) => res.json())
       .then((data) => {
         if (destino === "jugador") {
@@ -85,6 +86,7 @@ function App() {
     setTotalC(total);
 
     if (turnoCroupier && mazo?.deck_id && total < 17 && !ganador) {
+
       agarrarCarta(mazo.deck_id, 1, "croupier").then(() => {
         const nuevoTotal = calcularTotalCroupier([...mazoCroupier]);
         setTotalC(nuevoTotal);
